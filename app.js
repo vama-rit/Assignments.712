@@ -37,23 +37,19 @@ function animate() {
 
     let t= clock.getElapsedTime();
 
+    // if (t>20){
+    //     cube.position.x = X
+    //     cube.position.y = Y
+    //     cube.position.z = Z
+    // }
+
+    console.log(t);
+
     let X = 5 * t;
     X+=window.innerWidth/-16;
     let Y = 5 * t;
     Y+=window.innerHeight/-16;
     let Z = 0;
-
-
-    if(t%20==0){
-        X= -X;
-        Y= -Y;
-        Z=0;
-        cube.position.x = X
-        cube.position.y = Y
-        cube.position.z = Z
-    }
-
-    console.log(t);
 
     cube.position.x = X
     cube.position.y = Y
